@@ -12,6 +12,7 @@ This program is available under Apache License Version 2.0, available at https:/
 <link rel="import" href="vaadin-combo-box-mixin.html">
 <link rel="import" href="vaadin-combo-box-dropdown-wrapper.html">
 <link rel="import" href="vaadin-combo-box-styles.html">
+<link rel="import" href="../vaadin-development-mode-detector/vaadin-development-mode-detector.html">
 
 <dom-module id="vaadin-combo-box">
   <template>
@@ -328,6 +329,7 @@ This program is available under Apache License Version 2.0, available at https:/
        * @namespace Vaadin
        */
       window.Vaadin = window.Vaadin || {};
+      Vaadin.importIfDevelopmentMode("vaadin-usage-statistics/vaadin-usage-statistics.html");
       Vaadin.ComboBoxElement = ComboBoxElement;
     }
   </script>
